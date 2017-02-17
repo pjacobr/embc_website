@@ -1,0 +1,30 @@
+#header {
+    width: 100%;
+    background-color: black;
+}
+
+home-logo {}
+
+#menu {
+    color: white;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+
+ol {
+    position: relative;
+}
+
+li {
+    display: inline-block;
+    border: solid 1px white;
+    height: 100%;
+    margin: -2px;
+    padding: 10px;
+}
+
+#join {}
+
+#body {}
