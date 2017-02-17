@@ -1,15 +1,38 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    top: 0px;
+    overflow-x: hidden;
+}
+
 #header {
     width: 100%;
     background-color: black;
+    height: 75px;
+    padding: 10px;
 }
 
-home-logo {}
+#menu-logo:float {
+    border: 4px solid white;
+    background-color: green;
+}
+
+#menu-logo {
+    float: right;
+    right: 35px;
+    top: 10px;
+    position: relative;
+    background-color: grey;
+    border-radius: 10px;
+    display: none;
+}
 
 #menu {
     color: white;
     height: 100%;
-    width: 50%;
-    position: relative;
+    width: 60%;
+    position: fixed;
     left: 50%;
 }
 
@@ -17,11 +40,23 @@ ol {
     position: relative;
 }
 
+li:hover {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    ol {
+        display: none;
+    }
+    #menu-logo {
+        display: initial;
+    }
+}
+
 li {
     display: inline-block;
-    border: solid 1px white;
     height: 100%;
-    margin: -2px;
     padding: 10px;
 }
 
