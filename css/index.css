@@ -23,8 +23,6 @@ body {
     right: 35px;
     top: 10px;
     position: relative;
-    background-color: grey;
-    border-radius: 10px;
     display: none;
 }
 
