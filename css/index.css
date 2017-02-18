@@ -47,6 +47,7 @@
     height: 100%;
     width: 60%;
     display: inline-block;
+    top: -70px;
 }
 
 ol {
@@ -82,6 +83,12 @@ li {
     border-radius: 10px;
 }
 
-#join {}
+#join {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+#join-button {}
 
 #body {}
