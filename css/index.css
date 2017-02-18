@@ -1,28 +1,44 @@
-html,
-body {
-    padding: 0;
+* {
     margin: 0;
-    top: 0px;
-    overflow-x: hidden;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 #header {
     width: 100%;
-    background-color: black;
-    height: 75px;
-    padding: 10px;
+    background-color: #080900;
+    height: 170px;
+    overflow: hidden;
+}
+
+#home-logo-container {
+    width: 400px;
+    height: 100%;
+    display: inline-block;
+}
+
+#home-logo {
+    height: 250px;
+    width: 500px;
+    margin-top: -50px;
+    margin-left: -75px;
 }
 
 #menu-logo-container:hover {
     border: 4px solid white;
     background-color: green;
+    display: inline-block;
+}
+
+#menu-logo-container {
+    display: none;
 }
 
 #menu-logo {
-    float: right;
-    right: 35px;
-    top: 10px;
-    position: relative;
     display: none;
 }
 
@@ -30,32 +46,39 @@ body {
     color: white;
     height: 100%;
     width: 60%;
-    position: fixed;
-    left: 50%;
+    display: inline-block;
 }
 
 ol {
     position: relative;
+    font-size: x-large;
+    height: 20%;
+    ;
 }
 
 li:hover {
     background-color: darkgray;
-    border-radius: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     ol {
         display: none;
     }
+    #menu-logo-container {
+        position: fixed;
+        display: initial;
+    }
     #menu-logo {
+        position: relative;
         display: initial;
     }
 }
 
 li {
-    display: inline-block;
     height: 100%;
-    padding: 10px;
+    position: relative;
+    display: inline-table;
+    border-radius: 10px;
 }
 
 #join {}
