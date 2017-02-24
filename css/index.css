@@ -89,6 +89,33 @@ li {
     height: 100%;
 }
 
+.row {
+    height: 350px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    border: 1px solid black;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.pic,
+.summary {
+    border: 1px solid black;
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    margin-right: -5px;
+}
+
+.pic {
+    width: 30%;
+}
+
+.summary {
+    width: 70%;
+}
+
 #join-button {}
 
 #body {}
