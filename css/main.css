@@ -16,6 +16,14 @@ html {
     line-height: 1.4;
 }
 
+.extra-padding{
+  padding-left: 200px;
+}
+
+.border-circle{
+  border-radius: 100px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
