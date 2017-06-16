@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -188,7 +189,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="counting_sl">
                         <i class="fa fa-clock-o"></i>
-                        <h2 class="counter">229</h2>
+                        <h2 class="counter" id="days_since" onload='document.getElementById("days_since").innerHTML = calcDiff()'>229</h2>
                         <h4>Days Since We Began</h4>
                     </div>
                 </div>
@@ -211,34 +212,34 @@
                     <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
                         <li class="progress">
                             <div class="progress-bar" data-width="15">
-                                Electrical&Computer Engineering 15%
+                                Electrical&Computer Engineering 12%
                             </div>
                         </li>
                         <li class="progress">
                             <div class="progress-bar" data-width="65">
-                                Chemical Engineers 65%
+                                Chemical Engineers 15%
                             </div>
                         </li>
                         <li class="progress">
                             <div class="progress-bar" data-width="30">
-                                Mechanical Engineering 30%
+                                Mechanical/Manufacturing Engineering 13%
                             </div>
                         </li>
                         <li class="progress">
                             <div class="progress-bar" data-width="10">
-                                Manufacturing Engineering 10%
+                                Civil Engineering 4%
                             </div>
                         </li>
                     </ul>
                     <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
                         <li class="progress">
                             <div class="progress-bar" data-width="10">
-                                Civil Engineering 10%
+                                Business 3%
                             </div>
                         </li>
                         <li class="progress">
                             <div class="progress-bar" data-width="10">
-                                Computer Science 10%
+                                Computer Science 2%
                             </div>
                         </li>
                         <li class="progress">
@@ -328,55 +329,59 @@
                             <li data-filter=".motion-video">Workshops</li>
                         </ul>
                     </div>
-
+                    <!--
+                        Recruitment = web-design
+                        Info Session = graphic
+                        Club Socials = photography
+                        Workshops = motion-video
+                        -->
                     <div class="all-portfolios">
+                        <!--Nu Skin -->
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio web-design">
+                            <div class="single-portfolio graphic">
                                 <img class="img-responsive" src="img\NuSkin3.JPG" alt="">
                             </div>
                         </div>
+                        <!--Nu Skin -->
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio photography">
-                                <img class="img-responsive" src="img\NuSkin2.JPG" alt="">
+                            <div class="single-portfolio graphic">
+                                <img class="img-responsive" src="img\NuSkin2.JPG" style='-webkit-transform:rotate(90deg)' alt="">
                             </div>
                         </div>
+                        <!--CEO-->
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio web-design">
+                            <div class="single-portfolio graphic">
                                 <img class="img-responsive" src="img\Mark Messick Orbital ATK.JPG" alt="">
                             </div>
                         </div>
+                        <!--Closing Social -->
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio web-design">
+                            <div class="single-portfolio photography">
                                 <img class="img-responsive" src="img\IMG_3977.JPG" alt="">
                             </div>
                         </div>
+                         <!--Closing Social -->
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
                             <div class="single-portfolio photography">
-                                <img class="img-responsive" src="img\IMG_3970.JPG" alt="">
+                                <img class="img-responsive" src="img\IMG_3970.JPG" style='-webkit-transform:rotate(90deg)' alt="">
                             </div>
                         </div>
+                        <!-- Nu Skin -->
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio web-design">
+                            <div class="single-portfolio graphic">
                                 <img class="img-responsive" src="img\NuSkin6.JPG" alt="">
                             </div>
                         </div>
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio web-design">
+                            <div class="single-portfolio graphic">
                                 <img class="img-responsive" src="img\OCI info session.JPG" alt="">
                             </div>
                         </div>
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio photography">
+                            <div class="single-portfolio graphic">
                                 <img class="img-responsive" src="img\2016Kick-off2.JPG" alt="">
                             </div>
                         </div>
-                    </div>
-
-
-                </div>
-                <div class="post_btn">
-                    <div class="hover_effect_btn" id="hover_effect_btn">
-                        <a href="#hover_effect_btn" data-hover="view more post"><span>view more post</span></a>
                     </div>
                 </div>
             </div>
@@ -437,7 +442,7 @@
                             <p>Engineer, </p>
                         </div>
                         <div class="sngl_team">
-                            <img src="" alt="" />
+                            <img src="img/aaron_bame.jpg" alt="" />
                             <h3>Aaron Bame<span>Mentoring Director</span></h3>
                             <p>Mechanical Engineer, </p>
                         </div>
@@ -447,7 +452,7 @@
                             <p>Chemical Engineer, </p>
                         </div>
                         <div class="sngl_team">
-                            <img src="" alt="" />
+                            <img src="img/ben_mcentire.jpg" alt="" />
                             <h3>Benjamin McEntire<span>Mechanical Engineering Rep</span></h3>
                             <p>Mechanical Engineer, </p>
                         </div>
@@ -549,31 +554,30 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="lts_pst">
                         <img src="" alt="" />
-                        <h2>Management Consulting</h2>
-                        <p>Larry is feeling overwhelmed by the decisions and small business owner decisions, who might he call to get help?</p>
-                        <a href="">Read more <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="lts_pst">
-                        <img src="" alt="" />
-                        <h2>Business Strategy</h2>
-                        <p>Larry has all the details set in stone but now he is going to need to decide some important details that might make or break his business.</p>
-                        <a href="">Read more <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="lts_pst">
-                        <img src="" alt="" />
                         <h2>Entrepreneurship</h2>
                         <p>Larry is starting a lemonade stand. He has never done anything like this before. Let's walk through the steps that he will take to make it possible.</p>
-                        <a href="">Read more <i class="fa fa-long-arrow-right"></i></a>
+                        <a href="entrepreneurship.html">Read more <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="post_btn">
-                    <div class="hover_effect_btn" id="hover_effect_btn">
-                        <a href="#hover_effect_btn" data-hover="view more post"><span>view more post</span></a>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="lts_pst">
+                        <img src="" alt="" />
+                        <h2>Management Consulting</h2>
+                        <p>Larry is feeling overwhelmed by the decisions and small business owner decisions, who might he call to get help?</p>
+                        <a href="management_consulting.html">Read more <i class="fa fa-long-arrow-right"></i></a>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="lts_pst">
+                        <img src="" alt="" />
+                        <h2>Private Equity</h2>
+                        <p>Larry has all the details set in stone but now he is going to need to decide some important details that might make or break his business.</p>
+                        <a href="private_equity.html">Read more <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="post_btn">
+                        <a href="entrepreneurship.html" data-hover="view more post"><span>view more post</span></a>
                 </div>
 
             </div>
@@ -671,7 +675,7 @@
     <!-- End footer Section -->
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
 
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -687,6 +691,19 @@
     <script src="js/plugins.js"></script>
     <!-- Google Map js -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        //Calculate the number of 
+        function calcDiff(){
+        var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+        var firstDate = new Date(2016,07,01);
+        var secondDate = new Date();
+        //console.log(firstDate)
+        //console.log(secondDate)
+        var diffDays = Math.round(Math.abs((secondDate.getTime() - firstDate.getTime())/(oneDay)));     
+        document.getElementById("days_since").innerHTML = diffDays
+        return diffDays;    
+    }
+    </script>
     <script>
         function initialize() {
             var mapOptions = {
@@ -707,7 +724,7 @@
     </script>
     <script src="js/main.js"></script>
 
-    <script src="showHide.js" type="text/javascript"></script>
+    <script src="js/showHide.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -727,13 +744,13 @@
     </script>
     <script>
         jQuery(document).ready(function($) {
+            console.log("Hey " + calcDiff())
             $('.counter').counterUp({
                 delay: 10,
                 time: 1000
             });
         });
     </script>
-
     <script>
         //Hide Overflow of Body on DOM Ready //
         $(document).ready(function() {
